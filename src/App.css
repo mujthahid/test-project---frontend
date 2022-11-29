@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+.loginPage{
+  background-color:black;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginForm form{
+  /* height: 100vh; */
+  display: flex;
+  flex-direction:column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ justify-content: center;
+ border: 2px slateblue solid;
+ padding: 25px;
+ background-color:blueviolet;
+ border-radius: 3px;
+ box-shadow: 1px 1px 5px black ;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.loginForm label{
+  margin: 5px 5px;
+color: black;
+font-weight: bold;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginForm input{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  background-color:gainsboro;
+  
+}
+
+.loginForm button{
+  width: fit-content;
+  margin: 10px ;
+ padding: 10px 20px;
+  background-color: black;
+  color: azure;
+  border-radius: 6px;
+ 
+}
+
+.dashboard{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  background-color: black;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard h3{
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard .logoutBtn{
+  position: fixed;
+  top: 10px;
+  right:10px;
 }
+
+.dashboard .tableDiv{
+  max-height: 80vh;
+  overflow-y: scroll;
+  margin: 10px 0;
+}
+
+.dashboard .addUserBtn{
+  background-color: beige;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  
+}
+
+
+
+.dashboard table,th {
+  border: 2px solid black;
+  background-color:lavender;
+  border-radius: 5px;
+ margin: 10px;
+  text-align: center;
+}
+.dashboard th{
+  padding: 5px;
+}
+.dashboard  td{
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+}
+.dashboard td button{
+  margin: 5px;
+  background-color:slateblue;
+  color: azure;
+  border-radius: 9px;
+  border: 1px solid blackd;
+
+}
+
+.popupWrapper{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup{
+  width: 500px;
+  height: 80vh;
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  border: 1px black solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black ;
+  
+}
+
+.closeBtn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.formData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formData Form{
+  display: flex;
+  flex-direction: column;
+ padding: 5px 5px;
+}
+.formData span{
+  font-size: small;
+}
+.formData h3{
+  text-align: center;
+}
+.formData label,input{
+  margin: 5px 5px;
+  padding: 5px 5px;
+  width: 300px;
+}
+
+.formData button{
+  margin: 20px 10px;
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.viewuser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.viewuser h3{
+  color: black;
+}
+
